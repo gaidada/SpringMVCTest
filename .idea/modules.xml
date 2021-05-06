@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringMVCCRUD/SpringMVCCRUD.iml" filepath="$PROJECT_DIR$/SpringMVCCRUD/SpringMVCCRUD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVCDataBinder/SpringMVCDataBinder.iml" filepath="$PROJECT_DIR$/SpringMVCDataBinder/SpringMVCDataBinder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVCException/SpringMVCException.iml" filepath="$PROJECT_DIR$/SpringMVCException/SpringMVCException.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVCInterceptor/SpringMVCInterceptor.iml" filepath="$PROJECT_DIR$/SpringMVCInterceptor/SpringMVCInterceptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVCMerge/SpringMVCMerge.iml" filepath="$PROJECT_DIR$/SpringMVCMerge/SpringMVCMerge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVCOutput/SpringMVCOutput.iml" filepath="$PROJECT_DIR$/SpringMVCOutput/SpringMVCOutput.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVCRequest/SpringMVCRequest.iml" filepath="$PROJECT_DIR$/SpringMVCRequest/SpringMVCRequest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVCRest/SpringMVCRest.iml" filepath="$PROJECT_DIR$/SpringMVCRest/SpringMVCRest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVCTest.iml" filepath="$PROJECT_DIR$/SpringMVCTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVCUpload/SpringMVCUpload.iml" filepath="$PROJECT_DIR$/SpringMVCUpload/SpringMVCUpload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVCViewResolver/SpringMVCViewResolver.iml" filepath="$PROJECT_DIR$/SpringMVCViewResolver/SpringMVCViewResolver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVCi18n/SpringMVCi18n.iml" filepath="$PROJECT_DIR$/SpringMVCi18n/SpringMVCi18n.iml" />
+    </modules>
+  </component>
+</project>

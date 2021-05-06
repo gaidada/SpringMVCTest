@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd
+">
+    <context:component-scan base-package="com.gai"></context:component-scan>
+    <!--自定义视图解析器-->
+    <bean class="com.gai.view.MyViewResolver">
+        <property name="order" value="1"/>
+    </bean>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/pages/"/>
+        <property name="suffix" value=".jsp"/>
+        <!--<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>-->
+    </bean>
+
+
+    <!--sprngmvc管理国际化资源文件，配置一个资源文件管理器，id必须是messageSource！！-->
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <!--指定基础名-->
+        <property name="basename" value="i18n"/>
+    </bean>
+
+    <!--发送一个请求
+    path指定哪个请求
+    view-name 指定映射给哪个视图，默认其他的请求不好用了
+    -->
+    <mvc:view-controller path="/toLoginPage" view-name="login"/>
+    <!--所以继续开启mvc注解驱动模式-->
+    <mvc:annotation-driven></mvc:annotation-driven>
+</beans>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!--springMVC思想是有一个 前端控制器能拦截所有请求，并智能派发，这个前端控制器是一个servlet，应该在web.xml中配置-->
+    <servlet>
+        <servlet-name>springmvc</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <!--指定springMVC配置文件位置-->
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:springmvc.xml</param-value>
+        </init-param>
+        <!--servlet启动加载，原本是第一次访问创建对象-->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>springmvc</servlet-name>
+        <!--/ 不拦截jsp页面，拦截所有请求
+        /* 拦截jsp页面
+        处理*.jsp是tomcat做的事
+        -->
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+</web-app>
